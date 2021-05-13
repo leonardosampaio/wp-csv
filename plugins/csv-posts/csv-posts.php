@@ -30,6 +30,13 @@ function html( $post )
     wp_nonce_field( '_csv_posts_nonce', 'csv_posts_nonce' ); ?>
     <p>Para publicar posts em lote, informe um arquivo CSV com uma coluna TAG_NOME e
     uma ou mais colunas TAG_IMAGEM, que serão substituídas no texto.</p>
+    <label for="csv-posts-visibily">Visibilidade</label>
+    <select id="csv-posts-visibily" name="csv-posts-visibily">
+        <option value="publish">Público</option>
+        <option value="private">Privado</option>
+        <option value="draft">Rascunho</option>
+    </select>
+    <br/>
     <label for="csv">Arquivo CSV</label>
     <input type="file" id="csv-input" name="csv-input" accept=".csv">
     <?php
@@ -49,7 +56,8 @@ echo "
 
 function hook_transition_post_status($new_status, $old_status, $post)
 {
-    if(in_array($new_status,['draft','private']) && 
+    if((!isset($_POST['csv_import']) && !$_POST['csv_import']) &&
+        in_array($new_status,['draft','private']) && 
         isset($_FILES['csv-input']) && 
         isset($_FILES["csv-input"]["tmp_name"]))
     {
@@ -59,6 +67,8 @@ function hook_transition_post_status($new_status, $old_status, $post)
         $csvFileHandler = fopen($_FILES["csv-input"]["tmp_name"],"r");
         if ($csvFileHandler)
         {
+            $postsVisibility = $_POST['csv-posts-visibily'];
+
             while (($line = fgets($csvFileHandler)) !== false) {
                 $separator = strpos($line,',') ? ',' : ';';
                 $csvLineArray = explode($separator, $line);
@@ -79,13 +89,6 @@ function hook_transition_post_status($new_status, $old_status, $post)
                             foreach($imgs[1] as $k => $img)
                             {
                                 $productImage = $productImages[$k] ? $productImages[$k] : $productImages[0];
-
-                                // https://stackoverflow.com/questions/1252693/using-str-replace-so-that-it-only-acts-on-the-first-match
-                                // $pos = strpos($replacedContent, $img);
-                                // if ($pos !== false) {
-                                //     $replacedContent = substr_replace($replacedContent, $productImage, $pos, strlen($img));
-                                // }
-
                                 $replacedContent = str_replace($img, $productImage, $replacedContent);
                             }
                         }
@@ -105,11 +108,12 @@ function hook_transition_post_status($new_status, $old_status, $post)
                         "post_title"    =>  $replacedTitle,
                         "post_name"     =>  $replacedName,
                         "post_content"  =>  $replacedContent,
-                        "post_status"   =>  'publish',
+                        "post_status"   =>  $postsVisibility,
                         "post_date"     =>  $dateStr,
                         "post_modified" =>  $dateStr
                     ];
 
+                    $_POST['csv_import'] = true;
                     if (is_int(wp_insert_post($newPost, true, true)))
                     {
                         $count++;
