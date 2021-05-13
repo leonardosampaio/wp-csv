@@ -7,6 +7,10 @@ Author: Leonardo Sampaio
 Version: 1.0
 */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	die( 'Kangaroos cannot jump here' );
+}
+
 function csv_meta_box_add()
 {
     global $post;
