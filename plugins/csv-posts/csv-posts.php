@@ -109,7 +109,8 @@ function hook_transition_post_status($new_status, $old_status, $post)
                         "post_content"          =>  $replacedContent,
                         "post_status"           =>  $postsVisibility,
                         "post_date"             =>  $dateStr,
-                        "post_modified"         =>  $dateStr
+                        "post_modified"         =>  $dateStr,
+                        'tax_input'             =>  $_POST['tax_input']
                     ];
 
                     $_POST['csv_import'] = true;
