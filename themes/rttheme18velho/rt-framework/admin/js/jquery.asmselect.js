@@ -83,7 +83,7 @@
 
 				if(options.sortable) makeSortable();
 
-				if($.browser.msie && $.browser.version < 8) $ol.css('display', 'inline-block'); // Thanks Matthew Hutton
+				if($.browser && $.browser.msie && $.browser.version < 8) $ol.css('display', 'inline-block'); // Thanks Matthew Hutton
 			}
 
 			function makeSortable() {
