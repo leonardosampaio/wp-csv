@@ -1,0 +1,538 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Project-Id-Version: RT-Theme 18\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.8.9\n"
+"Last-Translator: \n"
+"Language: pt_BR\n"
+
+#. Text in function
+#: rttheme18/rt-framework/functions/theme_functions.php:241
+msgid "% Comments"
+msgstr "% Comentários"
+
+#. Text in function
+#: rttheme18/rt-framework/functions/rt_comments.php:35
+msgid "%1$s at %2$s"
+msgstr ""
+
+#. Text in function
+#: rttheme18/comments.php:22
+msgid "%s Responses to"
+msgstr "%s  Comentários para"
+
+#. Text in function
+#: rttheme18/rt-framework/functions/rt_comments.php:35
+msgid "(Edit)"
+msgstr "(Editar)"
+
+#. Text in function
+#: rttheme18/rt-framework/functions/theme_functions.php:241
+msgid "0 Comment"
+msgstr "0 Comentários"
+
+#. Text in function
+#: rttheme18/rt-framework/widgets/latest_posts_2.php:1
+#: rttheme18/rt-framework/widgets/popular_posts.php:1
+#: rttheme18/rt-framework/widgets/latest_posts.php:1
+#: rttheme18/rt-framework/functions/theme_functions.php:241
+msgid "1 Comment"
+msgstr "1 Comentário"
+
+#. Text in function
+#: rttheme18/rt-framework/functions/theme_functions.php:245
+msgid "404 - Page Not Found"
+msgstr "404 - página Não Encontrada"
+
+#. Text in function
+#: rttheme18/author-bio.php:12
+msgid "About %s"
+msgstr "Sobre Nós %s"
+
+#. Text in function
+#: rttheme18/archive.php:1
+msgid "All posts by: %s"
+msgstr "Todas as Publicações de: %s"
+
+#. Text in echo
+#: rttheme18/404.php:24
+msgid ""
+"Apologies, but the page you requested could not be found. Perhaps searching "
+"will help."
+msgstr ""
+"A página solicitada não pode ser encontrada. Talvez o campo de Pesquisa "
+"ajude."
+
+#. Text in function
+#: rttheme18/archive.php:1
+msgid "Archives"
+msgstr "Arquivos"
+
+#. Text in function
+#: rttheme18/rt-framework/functions/theme_functions.php:245
+msgid "Attachment:"
+msgstr "Anexos:"
+
+#. Text in function
+#: rttheme18/rt-framework/functions/rt_breadcrumb.php:1
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+#. Text in function
+#: rttheme18/comments.php:88
+msgid "Cancel reply"
+msgstr "Cancelar resposta"
+
+#. Text in function
+#: rttheme18/comments.php:88
+msgid "Comment"
+msgstr "Comentário"
+
+#. Text in function
+#: rttheme18/rt-framework/widgets/latest_posts_2.php:1
+#: rttheme18/rt-framework/widgets/popular_posts.php:1
+#: rttheme18/rt-framework/widgets/latest_posts.php:1
+#: rttheme18/product-contents/single-products-content.php:137
+msgid "Comments"
+msgstr "Comentarios"
+
+#. Text in echo
+#: rttheme18/comments.php:71
+msgid "Comments are closed."
+msgstr "Comentários estão Fechadis"
+
+#. Text in function
+#: rttheme18/rt-framework/classes/loading.php:1
+msgid "Company Name"
+msgstr "Nome da Empresa"
+
+#. Text in function
+#: rttheme18/rt-framework/functions/rt_shortcodes.php:1
+msgid "Company Name:"
+msgstr "Nome da Empresa:"
+
+#. Text in function
+#: rttheme18/rt-framework/functions/rt_shortcodes.php:1
+msgid "Company URL:"
+msgstr "URL da  Empresa:"
+
+#. Text in function
+#: rttheme18/rt-framework/classes/loading.php:1
+msgid "Company Url"
+msgstr "URL da Empresa"
+
+#. Text in function
+#: rttheme18/rt-framework/classes/loading.php:1
+msgid "Contact Form Submission from"
+msgstr "Submissão do Formulário de Contato de "
+
+#. Text in function
+#: rttheme18/post-contents/content-gallery.php:128
+#: rttheme18/post-contents/archive-content.php:42
+#: rttheme18/post-contents/content.php:70
+#: rttheme18/post-contents/content-aside.php:70
+#: rttheme18/post-contents/content-link.php:57
+#: rttheme18/post-contents/content-audio.php:99
+#: rttheme18/post-contents/content-video.php:114
+msgid "Continue reading"
+msgstr "Continue Lendo"
+
+#. Text in function
+#: rttheme18/archive.php:1
+msgid "Daily Archives: %s"
+msgstr ""
+
+#. Text in function
+#: rttheme18/product-contents/single-products-content.php:137
+msgid "Documents"
+msgstr ""
+
+#. Text in function
+#: rttheme18/product-contents/single-products-content.php:207
+msgid "Download Excel File"
+msgstr ""
+
+#. Text in function
+#: rttheme18/product-contents/single-products-content.php:207
+msgid "Download File"
+msgstr ""
+
+#. Text in function
+#: rttheme18/product-contents/single-products-content.php:207
+msgid "Download PDF File"
+msgstr ""
+
+#. Text in function
+#: rttheme18/product-contents/single-products-content.php:207
+msgid "Download PowerPoint File"
+msgstr ""
+
+#. Text in function
+#: rttheme18/product-contents/single-products-content.php:207
+msgid "Download Word File"
+msgstr ""
+
+#. Text in function
+#: rttheme18/comments.php:88 rttheme18/rt-framework/classes/loading.php:1
+msgid "Email"
+msgstr ""
+
+#. Text in function
+#: rttheme18/portfolio-contents/content.php:153
+#: rttheme18/post-contents/content-gallery.php:56
+#: rttheme18/post-contents/single-content.php:69
+#: rttheme18/post-contents/content.php:48
+#: rttheme18/rt-framework/functions/theme_functions.php:245
+#: rttheme18/rt-framework/functions/rt_shortcodes.php:1
+#: rttheme18/portfolio-contents/carousel-content.php:56
+#: rttheme18/post-contents/content-aside.php:50
+#: rttheme18/post-contents/single-content-gallery.php:67
+msgid "Enlarge Image"
+msgstr "Aumentar Imagem"
+
+#. Text in function
+#: rttheme18/rt-framework/functions/rt_breadcrumb.php:1
+msgid "Error 404"
+msgstr "Erro 404"
+
+#. Text in function
+#: rttheme18/archive.php:1
+msgid "F Y"
+msgstr ""
+
+#. Text in echo
+#: rttheme18/product-contents/single-products-content.php:136
+msgid "General Details"
+msgstr "Informações Gerais"
+
+#. Text in function
+#: rttheme18/post-contents/content-link.php:33
+msgid "Go to:"
+msgstr ""
+
+#. Text in function
+#: rttheme18/post-contents/content-link.php:48
+#: rttheme18/post-contents/single-content-link.php:60
+msgid "Go to: "
+msgstr ""
+
+#. Text in function
+#: rttheme18/rt-framework/functions/theme_functions.php:245
+#: rttheme18/rt-framework/functions/rt_breadcrumb.php:1
+msgid "Home"
+msgstr ""
+
+#. Text in echo
+#: rttheme18/content-none.php:20
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#. Text in function
+#: rttheme18/comments.php:88
+msgid "Leave a Reply"
+msgstr "Deixe um Comentário"
+
+#. Text in function
+#: rttheme18/comments.php:88
+msgid "Leave a Reply to %s"
+msgstr "Deixe um Comentário para %s"
+
+#. Text in echo
+#: rttheme18/header.php:83
+msgid "Login / Register"
+msgstr ""
+
+#. Text in echo
+#: rttheme18/header.php:81
+msgid "Logout"
+msgstr ""
+
+#. Text in function
+#: rttheme18/rt-framework/classes/loading.php:1
+msgid "Message"
+msgstr "Mensagem"
+
+#. Text in function
+#: rttheme18/archive.php:1
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#. Text in echo
+#: rttheme18/header.php:80
+msgid "My Account"
+msgstr "Minha Conta"
+
+#. Text in function
+#: rttheme18/comments.php:88 rttheme18/rt-framework/classes/loading.php:1
+msgid "Name"
+msgstr "Nome"
+
+#. Text in function
+#: rttheme18/comments.php:64
+msgid "Newer Comments "
+msgstr "Comentários Novos"
+
+#. Text in function
+#: rttheme18/rt-framework/functions/theme_functions.php:245
+msgid "Next Post"
+msgstr "Próximo Artigo"
+
+#. Text in function
+#: rttheme18/comments.php:59
+msgid "Older Comments"
+msgstr "Comentários Antigos"
+
+#. Text in function
+#: rttheme18/comments.php:22
+msgid "One Response to"
+msgstr "Uma Resposta para"
+
+#. Text in function
+#: rttheme18/post-contents/content-gallery.php:130
+#: rttheme18/post-contents/single-content-video.php:121
+#: rttheme18/post-contents/single-content.php:90
+#: rttheme18/post-contents/content.php:72
+#: rttheme18/staff-contents/single-staff.php:38 rttheme18/content-page.php:20
+#: rttheme18/post-contents/content-aside.php:72
+#: rttheme18/post-contents/content-link.php:59
+#: rttheme18/post-contents/single-content-gallery.php:132
+#: rttheme18/post-contents/single-content-link.php:67
+#: rttheme18/post-contents/content-audio.php:101
+#: rttheme18/post-contents/content-video.php:116
+#: rttheme18/portfolio-contents/single-portfolio-content.php:32
+#: rttheme18/post-contents/single-content-audio.php:105
+msgid "Pages:"
+msgstr "Paginas:"
+
+#. Text in function
+#: rttheme18/rt-framework/classes/loading.php:1
+msgid "Phone"
+msgstr "Telefone"
+
+#. Text in function
+#: rttheme18/rt-framework/functions/rt_shortcodes.php:1
+msgid "Phone Number:"
+msgstr "Número de Telefone"
+
+#. Text in function
+#: rttheme18/portfolio-contents/content-audio.php:74
+#: rttheme18/portfolio-contents/carousel-content-audio.php:66
+#: rttheme18/post-contents/content-audio.php:56
+#: rttheme18/post-contents/single-content-audio.php:67
+msgid "Play Audio"
+msgstr ""
+
+#. Text in function
+#: rttheme18/post-contents/single-content-video.php:66
+#: rttheme18/portfolio-contents/carousel-content-video.php:89
+#: rttheme18/portfolio-contents/content-video.php:99
+#: rttheme18/post-contents/content-video.php:57
+msgid "Play Video"
+msgstr ""
+
+#. Text in function
+#: rttheme18/rt-framework/classes/loading.php:1
+msgid "Please enter a valid email address!"
+msgstr "Por favor informe um endereço de e-mail válido"
+
+#. Text in function
+#: rttheme18/comments.php:88
+msgid "Post Comment"
+msgstr "Publicar Comentário"
+
+#. Text in function
+#: rttheme18/rt-framework/functions/rt_breadcrumb.php:1
+msgid "Posts tagged: %s"
+msgstr ""
+
+#. Text in function
+#: rttheme18/rt-framework/functions/theme_functions.php:245
+msgid "Previous Post"
+msgstr "Artigo Prévio"
+
+#. Text in function
+#: rttheme18/product-contents/single-products-content.php:297
+msgid "RELATED PRODUCTS"
+msgstr "PRODUTOS CORRELATOS"
+
+#. Text in function
+#: rttheme18/post-contents/content-link.php:50
+msgid "Read more: "
+msgstr "Ler mais:"
+
+#. Text in function
+#: rttheme18/content-none.php:11
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#. Text in function
+#: rttheme18/product-contents/single-products-content.php:101
+msgid "SKU"
+msgstr ""
+
+#. Text in echo
+#: rttheme18/header.php:91 rttheme18/header.php:195
+msgid "Search"
+msgstr "Pesquisar"
+
+#. Text in function
+#: rttheme18/search.php:1
+msgid "Search Results for: %s"
+msgstr "Resultados de Pesquisa para: %s"
+
+#. Text in function
+#: rttheme18/rt-framework/functions/rt_breadcrumb.php:1
+msgid "Search results for: %s"
+msgstr "Resultados de  Pesquisa para: %s"
+
+#. Text in function
+#: rttheme18/rt-framework/functions/rt_shortcodes.php:1
+msgid "Security Question:"
+msgstr "Por Favor Responda essa Questão de Segurança:"
+
+#. Text in function
+#: rttheme18/rt-framework/functions/rt_shortcodes.php:1
+msgid "Send"
+msgstr "Enviar"
+
+#. Text in echo
+#: rttheme18/content-none.php:15
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Não encontramos nada com o seu termo de pesquisa. por favor tente novamente "
+"com uma palavra-chave diferente."
+
+#. Text in echo
+#: rttheme18/product-contents/single-products-content.php:320
+msgid "Sorry, no page found."
+msgstr "Desculpe, nenhuma página encontrada."
+
+#. Text in function
+#: rttheme18/archive.php:1
+msgid "Tag Archives: %s"
+msgstr ""
+
+#. Text in function
+#: rttheme18/rt-framework/classes/loading.php:1
+msgid "Thanks"
+msgstr "Obrigado"
+
+#. Text in function
+#: rttheme18/rt-framework/classes/loading.php:1
+msgid "There was an error submitting the form."
+msgstr "Houve um erro na submissão do formulário."
+
+#. Text in echo
+#: rttheme18/comments.php:4
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#. Text in function
+#: rttheme18/rt-framework/functions/rt_breadcrumb.php:1
+msgid "View all posts in %s"
+msgstr "Ver todas as publicações em %s"
+
+#. Text in function
+#: rttheme18/rt-framework/functions/rt_breadcrumb.php:1
+msgid "View all products in %s"
+msgstr "Ver todos os Produtos em %s"
+
+#. Text in function
+#: rttheme18/rt-framework/functions/rt_breadcrumb.php:1
+msgid "View all works in %s"
+msgstr "Ver todos os trabalhos em %s"
+
+#. Text in echo
+#: rttheme18/header.php:86
+#: rttheme18/rt-framework/functions/woo-integration.php:366
+msgid "View your shopping cart"
+msgstr ""
+
+#. Text in function
+#: rttheme18/comments.php:88
+msgid "Website"
+msgstr ""
+
+#. Text in function
+#: rttheme18/rt-framework/classes/loading.php:1
+msgid ""
+"Wrong answer for the security question! Please make sure that the sum of the "
+"two numbers is correct!"
+msgstr ""
+"Resposta errada para a questão de segurança! Por favor tenha certeza de que "
+"a soma dos dois números esteja correta."
+
+#. Text in function
+#: rttheme18/archive.php:1
+msgid "Y"
+msgstr ""
+
+#. Text in function
+#: rttheme18/archive.php:1
+msgid "Yearly Archives: %s"
+msgstr "Arquivos Anuais: %s"
+
+#. Text in function
+#: rttheme18/rt-framework/functions/rt_shortcodes.php:1
+msgid "Your Email: (*)"
+msgstr "Seu Email: (*)"
+
+#. Text in function
+#: rttheme18/rt-framework/functions/rt_shortcodes.php:1
+msgid "Your Name: (*)"
+msgstr "Seu Nome: (*)"
+
+#. Text in echo
+#: rttheme18/rt-framework/functions/rt_comments.php:48
+msgid "Your comment is awaiting moderation."
+msgstr "Seu comentário está aguardando moderação."
+
+#. Text in function
+#: rttheme18/rt-framework/classes/loading.php:1
+msgid "Your email was successfully sent. We will be in touch soon."
+msgstr "Seu e-mail foi enviado com sucesso. Entraremos em contato em breve."
+
+#. Text in function
+#: rttheme18/rt-framework/functions/rt_shortcodes.php:1
+msgid "Your Message: (*)"
+msgstr "Sua Mensagem: (*)"
+
+#. Text in function
+#: rttheme18/rt-framework/functions/rt_shortcodes.php:1
+msgid "show all"
+msgstr "mostrar todos"
+
+#. Text in echo
+#: rttheme18/comments.php:85
+msgid "top"
+msgstr ""
+
+#. Text in echo
+#: rttheme18/searchform.php:3
+msgid "type and hit enter.."
+msgstr "digite e aperte enter.."
+
+#: product-contents/single-products-content.php:106
+msgid "Category"
+msgid_plural "Categories"
+msgstr[0] "Categoria"
+msgstr[1] "Categorias"
+
+#. Text in function
+#: rttheme18/rt-framework/functions/header.php:86 header.php:86
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
