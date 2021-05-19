@@ -31,7 +31,6 @@ services:
     volumes:
       - wordpress:/var/www/html
       - ./plugins/csv-posts:/var/www/html/wp-content/plugins/csv-posts
-      - ./themes/rttheme18velho:/var/www/html/wp-content/themes/rttheme18velho
     networks:
       - app-network
 
@@ -45,6 +44,7 @@ services:
       - "80:80"
     volumes:
       - wordpress:/var/www/html
+      - ./themes/rttheme18velho:/var/www/html/wp-content/themes/rttheme18velho
       - ./nginx-conf:/etc/nginx/conf.d
     networks:
       - app-network
