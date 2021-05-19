@@ -55,6 +55,12 @@ if(!function_exists('hook_transition_post_status'))
 {
     function hook_transition_post_status($new_status, $old_status, $post)
     {
+        // var_dump($_POST);die();
+        // echo '<p/>';
+        // echo var_dump($post);
+        // echo '<p/>';
+        // die();
+
         set_transient('csv-count', null, 100);
         
         if((!isset($_POST['csv_import']) && !$_POST['csv_import']) &&
@@ -78,6 +84,7 @@ if(!function_exists('hook_transition_post_status'))
 
                     if ($csvLineArray)
                     {
+                        $firstImage = null;
                         $productName = $csvLineArray[0];
                         $productImages = $csvLineArray[1] ? array_slice($csvLineArray,1) : null;
 
@@ -91,8 +98,12 @@ if(!function_exists('hook_transition_post_status'))
                             {
                                 foreach($imgs[1] as $k => $img)
                                 {
-                                    $productImage = $productImages[$k] ? $productImages[$k] : $productImages[0];
-                                    $replacedContent = str_replace($img, trim($productImage), $replacedContent);
+                                    $productImage = trim($productImages[$k] ? $productImages[$k] : $productImages[0]);
+                                    $replacedContent = str_replace($img, $productImage, $replacedContent);
+                                    if (!$firstImage)
+                                    {
+                                        $firstImage = $productImage;
+                                    }
                                 }
                             }
                         }
@@ -123,7 +134,7 @@ if(!function_exists('hook_transition_post_status'))
                         $_POST['csv_import'] = true;
 
                         $id = wp_insert_post($newPost, true, true);
-                        if (is_int($id))
+                        if(!is_wp_error($id))
                         {
                             if ($yoastActive)
                             {
@@ -136,6 +147,18 @@ if(!function_exists('hook_transition_post_status'))
                                 $metaKeyword = str_replace('TAG_NOME', $productName, $_POST['yoast_wpseo_focuskw']);
                                 update_post_meta($id, '_yoast_wpseo_focuskw',   $metaKeyword);
                             }
+
+                            if ($firstImage)
+                            {
+                                global $wpdb;
+                                $attachment = $wpdb->get_col($wpdb->prepare("SELECT ID FROM $wpdb->posts WHERE guid='%s';", $firstImage));
+                                if ($attachment && $attachment[0])
+                                {
+                                    $thumbnail_id = $attachment[0];
+                                    add_post_meta($id, '_thumbnail_id', $thumbnail_id);
+                                }
+                            }
+
                             $count++;
                         }
                     }
