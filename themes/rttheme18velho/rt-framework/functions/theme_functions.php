@@ -464,13 +464,13 @@ if( ! function_exists("rt_get_info_bar_function") ){
 				echo ( ! empty( $display_title ) ) ? '<section class="heading"><'.apply_filters("rt_heading_tag","h2").'>'.$rt_title.'</'.apply_filters("rt_heading_tag","h2").'></section> ' : "";																	  	 
 					
 					if ( ! empty( $display_breadcrumb ) ) {
-						do_action( "rt_breadcrumb_menu", array("wrap_before" => '<section class="breadcrumb">', "wrap_after" => '</section>') );	
+						do_action( "rt_breadcrumb_menu", array("wrap_before" => '<section class="breadcrumb" itemtype="https://schema.org/BreadcrumbList">', "wrap_after" => '</section>') );	
 					}
 
 			}else{ 
 				 									
 					if ( ! empty( $display_breadcrumb ) ) {
-						do_action( "rt_breadcrumb_menu", array("wrap_before" => '<div class="breadcrumb">', "wrap_after" => '</div>') );								  	
+						do_action( "rt_breadcrumb_menu", array("wrap_before" => '<div class="breadcrumb" itemtype="https://schema.org/BreadcrumbList">', "wrap_after" => '</div>') );								  	
 					}
 				
 				echo ( ! empty( $display_title ) ) ? '<div class="head_text"><'.apply_filters("rt_heading_tag","h2").'>'.$rt_title.'</'.apply_filters("rt_heading_tag","h2").'></div> ' : "";																	  	 

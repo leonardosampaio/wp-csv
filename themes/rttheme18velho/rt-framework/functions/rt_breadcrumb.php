@@ -35,7 +35,7 @@ if( ! function_exists('rt_breadcrumb') ){
 			if( is_woocommerce() ){
 				$defaults = array(
 					'delimiter'  => $rt_delimiter,
-					'wrap_before'  => $wrap_before . '<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a class="icon-home" itemprop="url" href="'. RT_BLOGURL .'"><span title="'. get_bloginfo('name') .'">'.$home.'</span></a></div>' .$rt_delimiter,
+					'wrap_before'  => $wrap_before . '<div itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem"><a class="icon-home" itemprop="url" href="'. RT_BLOGURL .'"><span title="'. get_bloginfo('name') .'">'.$home.'</span></a></div>' .$rt_delimiter,
 					'wrap_after' => $wrap_after,
 					'before'   => '',
 					'after'   => '',
@@ -341,7 +341,7 @@ if( ! function_exists('rt_create_breadcrumb_item') ){
 
 		$item = "";
 
-		$item .= ( $sublink ) ? "\n".'<div itemscope itemprop="child" itemtype="http://data-vocabulary.org/Breadcrumb">' : '<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb">' ;
+		$item .= ( $sublink ) ? "\n".'<div itemscope itemprop="child" itemtype="https://schema.org/ListItem">' : '<div itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">' ;
 
 		$item .= ! empty( $url ) ? '<a class="'.$class.'" href="'.$url.'" itemprop="url">' : "";
 
