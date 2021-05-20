@@ -30,6 +30,7 @@ services:
       - WORDPRESS_DB_NAME=wordpress
     volumes:
       - wordpress:/var/www/html
+      - ./themes/rttheme18velho:/var/www/html/wp-content/themes/rttheme18velho
       - ./plugins/csv-posts:/var/www/html/wp-content/plugins/csv-posts
     networks:
       - app-network
