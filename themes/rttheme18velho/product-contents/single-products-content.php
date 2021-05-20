@@ -176,7 +176,7 @@ if( $rt_sidebar_location[0] == "full" ){
 		#
 		#	Main content - General Details Tab
 		#	
-		if($tabbed_page):?><div class="pane"><?php else:?><div class="box one box-shadow margin-b30"><?php endif;?> 
+		if($tabbed_page):?><div id="pane_main_content" class="pane"><?php else:?><div class="box one box-shadow margin-b30"><?php endif;?> 
 			<div>
 				<?php echo $content;?>
 			</div>

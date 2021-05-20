@@ -131,7 +131,7 @@ if( ! function_exists("rt_header_output_function") ){
 
 		//logo output
 		$logo_output = ! empty( $logo_url ) ? 
-						sprintf( ' <a href="%1$s" title="%2$s"><img src="%3$s" alt="%2$s" data-retina="%4$s"/></a> ', RT_BLOGURL, get_bloginfo('name'), $logo_url, $logo_url_2x ) :
+						sprintf( ' <a href="%1$s" title="%2$s"><img id="logo_principal" src="%3$s" alt="%2$s" data-retina="%4$s"/></a> ', RT_BLOGURL, get_bloginfo('name'), $logo_url, $logo_url_2x ) :
 						sprintf( ' <h1 class="logo"><a href="%1$s" title="%2$s">%2$s</a></h1> ', RT_BLOGURL, get_bloginfo('name') ) ;
 
 		//logo class name
@@ -877,7 +877,7 @@ if( ! function_exists("rt_create_product_image_slider") ){
 			}else{
 
 				$slides_output .= sprintf('
-						<div class="imgeffect">								
+						<div class="imgeffect flexslider_image">								
 							%s
 							<img itemprop="image" src="%s" alt="%s">
 						</div> 
@@ -891,7 +891,7 @@ if( ! function_exists("rt_create_product_image_slider") ){
 		if( count( $rt_gallery_images ) > 1 ) {	
 			$thumbnail_navigation = sprintf('
 				<!-- slider thumbnails -->
-				<div id="%s_carousel" class="flexslider slider-carousel margin-t10">
+				<div id="%s_carousel" class="flexslider slider-carousel margin-t10 flexslider_carousel">
 
 					<div class="flex-nav-container carousel"></div><!-- slider navigation buttons -->   
 
@@ -948,7 +948,7 @@ if( ! function_exists("rt_create_product_image_slider") ){
 			$slider = sprintf('
 				%s
 				<!-- product photos carousel -->                    
-				<div class="flexslider" id="%s">
+				<div class="flexslider flexslider_image" id="%s">
 					<ul class="slides">
 						%s
 					</ul>			

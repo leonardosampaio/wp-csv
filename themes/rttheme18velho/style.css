@@ -10,10 +10,44 @@ License: GNU General Public License
 License URI: /Licensing/gpl.txt
 */
 
-
 /*
 	EDIT /css/style.css for the theme stlye
 */
+
+/*
+Primeira imagem do slider
+*/
+.flexslider_image {
+	min-height: 200px !important;
+}
+/*
+Seletor do slider
+*/
+.flexslider_carousel {
+	min-height: 80px !important;
+}
+
+/*
+Sempre exibir texto do post
+*/
+#pane_main_content
+{
+	display: block;
+}
+
+/*
+Somente desktop
+*/
+@media only screen and (min-width: 960px)  {
+	/*
+	Tamanho mínimo da logo principal
+	*/
+	#logo_principal {
+		min-height: 40px;
+		min-width: 300px;
+	}
+}
+
 
 /* Escondendo Portfolio Category 2 */
 
