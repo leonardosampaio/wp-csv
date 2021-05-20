@@ -40,7 +40,7 @@ global $rt_sidebar_location;
  
 
 
-<div class="row clearfix" itemscope itemtype="http://schema.org/Product">
+<div class="row clearfix" itemscope itemtype="http://schema.org/Thing">
 
 		<?php if ( !empty($rt_gallery_images) && is_array($rt_gallery_images) && !$password_protected ): ?>
 			<div class="box three first"> 
