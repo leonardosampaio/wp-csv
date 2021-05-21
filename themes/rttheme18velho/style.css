@@ -32,7 +32,7 @@ Sempre exibir texto do post
 */
 #pane_main_content
 {
-	display: block;
+	display: block !important;
 }
 
 /*
