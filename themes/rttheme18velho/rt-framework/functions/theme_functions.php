@@ -2544,7 +2544,7 @@ if( ! function_exists("rt_structured_data") ){
 			<meta itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
 					<meta itemprop="name" content="Mokka Com. de Bens de Consumo">
 					<meta itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-							<meta itemprop="url" content="http://mokka-otim.duckdns.org/wp-content/uploads/2020/01/Logo-Mokka-Sensors.png">
+							<meta itemprop="url" content="https://mokka-sensors.com.br/wp-content/uploads/2020/01/Logo-Mokka-Sensors.png">
 					</meta>
 
 			</meta>
