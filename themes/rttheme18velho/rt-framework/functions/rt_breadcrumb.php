@@ -341,11 +341,11 @@ if( ! function_exists('rt_create_breadcrumb_item') ){
 
 		$item = "";
 
-		$item .= ( $sublink ) ? "\n".'<div itemscope itemprop="child" itemtype="https://schema.org/ListItem">' : '<div itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">' ;
+		$item .= ( $sublink ) ? "\n".'<div itemscope itemprop="item" itemtype="https://schema.org/ListItem">' : '<div itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">' ;
 
 		$item .= ! empty( $url ) ? '<a class="'.$class.'" href="'.$url.'" itemprop="url">' : "";
 
-		$item .= '<span itemprop="title" title="'.$title.'">' . $link_name . '</span>';
+		$item .= '<span itemprop="name" title="'.$title.'">' . $link_name . '</span>';
 
 		$item .= ! empty( $url ) ? '</a>' : ""; 
 

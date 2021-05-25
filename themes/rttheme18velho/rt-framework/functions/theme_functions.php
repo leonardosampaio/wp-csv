@@ -2534,10 +2534,20 @@ if( ! function_exists("rt_structured_data") ){
 
 		echo '
 			<meta itemprop="name" content="'. $rt_global_post_values["title"] .'">
-			<meta itemprop="datePublished" content="'. get_the_date() .'">
+			<meta itemprop="datePublished" content="'. get_the_date('Y-m-d') .'">
 			<meta itemprop="url" content="'. $rt_global_post_values["permalink"] .'">
 			<meta itemprop="image" content="'. $rt_global_post_values["featured_image_url"] .'">
 			<meta itemprop="author" content="'. get_the_author() .'">
+			<meta itemprop="mainEntityOfPage" itemscope itemtype="http://schema.org/WebPage">
+			<meta itemprop="dateModified" content="'. get_the_modified_date('Y-m-d') .'">
+			<meta itemprop="headline" content="'. $rt_global_post_values["title"] .'">
+			<meta itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+					<meta itemprop="name" content="Mokka Com. de Bens de Consumo">
+					<meta itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+							<meta itemprop="url" content="http://mokka-otim.duckdns.org/wp-content/uploads/2020/01/Logo-Mokka-Sensors.png">
+					</meta>
+
+			</meta>
 		';
 
 	}
