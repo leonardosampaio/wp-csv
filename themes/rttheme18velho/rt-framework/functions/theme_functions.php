@@ -2543,6 +2543,7 @@ if( ! function_exists("rt_structured_data") ){
 			<meta itemprop="headline" content="'. $rt_global_post_values["title"] .'">
 			<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization" style="display:none;">
 					<meta itemprop="name" content="Mokka Com. de Bens de Consumo">
+					<meta itemprop="url" content="https://mokka-sensors.com.br">
 					<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject" style="display:none;">
 							<meta itemprop="url" content="https://mokka-sensors.com.br/wp-content/uploads/2020/01/Logo-Mokka-Sensors.png">
 					</div>
